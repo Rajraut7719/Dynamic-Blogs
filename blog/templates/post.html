@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Single Post{% endblock title %}
+
+{% block content %}
+
+    <div class="container-custom">
+        <div class="row">
+            <div class="col s12 m8 "style="font-family: sans-serif;font-size:20px">
+                <h3>{{post.title}}</h3>
+                <p>{{post.cat.title}}</p>
+                <img src="/media/{{post.image}}"class="responsive-img" alt="">
+                <br>
+                <p>
+                    {{post.content |safe}}
+                </p>
+            </div>
+
+            <div class="col s12 m4  ">
+                {% for cat in cats %}
+                <div class="card z-depth-2"style="margin-left:50px">
+                    <div class="img-container">
+                        <img src="/media/{{cat.image}}"class="responsive-img" alt="">
+                    </div>
+                    <div class="card-content "style="background-color:powderblue;text-align:center ">
+                        <div class="card-title">
+                            {{cat.title}}
+                        </div>
+                        <p class="truncate"style="text-align:center">{{cat.description}}</p>
+                        <div class="container center-align mt20">
+                            <a href="/category/{{cat.url}}"class="btn bg-primary">View</a>
+                        </div>
+                    </div>
+                    
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}
