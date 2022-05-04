@@ -28,5 +28,8 @@ To get this project up and running locally on your computer follow the following
 # Category
 ![image](https://user-images.githubusercontent.com/96526237/166676917-727bf04b-90bd-487b-bfe0-953301b15dc8.png)
 
+# Logout
+![image](https://user-images.githubusercontent.com/96526237/166677196-273fdab8-7735-4e6f-b948-2002c0fc5d00.png)
+
 
 
